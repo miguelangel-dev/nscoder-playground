@@ -1,0 +1,19 @@
+**.DS_Store
+
+## gitignore nef files
+**/build/
+LICENSE
+
+## User data
+**/xcuserdata/
+podfile.lock
+**.DS_Store
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## CocoaPods
+**Pods**

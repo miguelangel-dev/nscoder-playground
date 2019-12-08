@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 72" style="enable-background:new 0 0 64 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:square;}
+</style>
+<title>feature-icon-tertiary</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="feature-icon-tertiary" transform="translate(-4.000000, 0.000000)">
+		<g id="Polygon">
+			<path class="st0" d="M36,2.3l29.2,16.8v33.7L36,69.7L6.8,52.8V19.2L36,2.3 M36,0L4.8,18v36L36,72l31.2-18V18L36,0L36,0z"/>
+		</g>
+		<g id="icon" transform="translate(20.000000, 20.000000)">
+			<circle id="path" class="st1" cx="16.5" cy="13.5" r="5.5"/>
+			<path class="st2" d="M21.8,16.4l3.7,1.8"/>
+			<path class="st2" d="M17.2,19.5l0.8,7.9"/>
+			<circle class="st1" cx="28.5" cy="2.5" r="2.5"/>
+			<circle class="st1" cx="28.5" cy="19.5" r="2.5"/>
+			<circle class="st1" cx="18.5" cy="30.5" r="2.5"/>
+			<circle class="st1" cx="2.5" cy="28.5" r="2.5"/>
+			<path class="st2" d="M4.5,26.5l8-9"/>
+			<circle class="st1" cx="2.5" cy="7.5" r="2.5"/>
+			<path class="st2" d="M5.1,8.6l5.4,2.9"/>
+			<path class="st2" d="M20.7,9.7l6-5"/>
+		</g>
+	</g>
+</g>
+</svg>
