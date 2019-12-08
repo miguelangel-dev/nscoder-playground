@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>nef - compile-time verification of your documentation</title>
+		<title>Playground Books - To infinity... and beyond!</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -25,8 +25,10 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+
+				<!-- Intro -->
 				<section data-background="img/nef-background.png">
-						<h3>Hard drugs for Playgrounds</h3>
+						<h4>Playgrounds: to infinity... and beyond!</h4>
 						<div>
 							<img src="assets/nef-logo.png" height="140" style="display: inline-block; margin-bottom: -35px;"/>
 							<h2 style="display: inline-block;">nef</h2>
@@ -37,10 +39,180 @@
 						<p><img src="assets/miguelangel-47deg.png" height="100"/> <img src="img/47deg-logo.png" height="100"/></p>
 				</section>
 
+
+				<!-- 47 deg -->
 				<section data-background="#fff">
 					<p><img src="img/47-brand-red.png" height="200"/></p>
 					<p><a href="http://twitter.com/47deg">@47deg</a> | <a href="https://www.47deg.com/">47deg.com</a></p>
 				</section>
+
+
+				<!-- What is nef? -->
+				<section>
+					<section data-background="#fff">
+						<h3>What is nef ?!</h3>
+						<img src="assets/nef-logo.png" alt="nef logo" width="20%">
+					</section>
+
+					<section data-background="#fff" data-transition="convex-in fade-out">
+						<img src="assets/nef/nef-works-playground.png" alt="What can I do? - Verification" width="25%">
+						<div data-markdown>
+							Eases the creation of Xcode Playgrounds with support for [__third party libraries__](https://github.com/bow-swift/nef#-creating-a-xcode-playground)
+						</div>
+					</section>
+
+					<section data-background="#fff" data-transition="convex-in fade-out">
+						<img src="assets/nef/nef-works-compile.png" alt="What can I do? - Compile" width="25%">
+						<div data-markdown>
+							[__Compiles Xcode Playgrounds__](https://github.com/bow-swift/nef#-installation) with support for 3rd-party libraries
+						</div>
+					</section>
+
+					<section data-background="#fff" data-transition="convex-in fade-out">
+						<img src="assets/nef/nef-works-markdown.png" alt="What can I do? - Markdown" width="75%">
+						<div data-markdown>
+							Generates [__Markdown__](https://github.com/bow-swift/nef#-generating-a-markdown-project) file from Xcode Playground page
+						</div>
+					</section>
+
+					<section data-background="#fff" data-transition="convex-in fade-out">
+						<img src="assets/nef/nef-works-jekyll.png" alt="What can I do? - Jekyll" width="60%">
+						<div data-markdown>
+							Integrates Xcode Playgrounds with [__Jekyll__](https://github.com/bow-swift/nef#-generating-markdown-files-for-jekyll) to create a microsite
+						</div>
+					</section>
+
+					<section data-background="#fff" data-transition="convex-in fade-out">
+						<img src="assets/nef/nef-works-carbon.png" alt="What can I do? - Carbon" width="45%">
+						<div data-markdown>
+							Export [__Carbon__](https://github.com/bow-swift/nef#-exporting-carbon-code-snippets) code snippets for given Xcode Playgrounds
+						</div>
+					</section>
+				</section>
+
+
+				<!-- WOW effect -->
+				<section data-background="#fff">
+						<section data-markdown data-background="#fff">
+							## What's the next?
+						</section>
+						<section data-markdown data-background="#fff" data-transition="convex-in fade-out">
+							## DEMO
+						</section>
+
+						<section data-markdown data-background="#fff">
+							#### 1. Create a new Xcode Playground + Bow
+
+```bash
+⟶ nef playground --name Bow
+```
+
+```bash
+Installing Playground (Bow)... ✅
+Set Bow target to iOS ✅
+Updating version (0.6.0)... ✅
+Installing Pods ... ✅
+```
+						</section>
+						<section data-markdown data-background="#fff">
+							#### 2. Add the next code
+
+```swift
+import Bow
+import BowEffects
+
+let io = IO&lt;Error, Void&gt;.invoke { print("Effect executed!") }
+print(io)
+print(io.unsafeRunSyncEither())
+```
+
+Output:
+```
+BowEffects.Suspend<Swift.Error, ()>
+Effect executed!
+Right(())
+```
+						</section>
+
+						<section data-background="#fff">
+							<div data-markdown>#### 3. What happens with the iPad?</div>
+							<img src="assets/swift.png" alt="nef in Playground Books" width="18%">
+							<div data-markdown>Use `project/nef.playgroundbook` in your iPad, and copy/paste the code to do the magic!</div>
+						</section>
+					</section>
+
+
+					<!-- Swift Playgrounds 3.x -->
+					<section data-markdown data-background="#fff">
+						## Swift Playgrounds 3.x
+					</section>
+
+
+
+
+
+
+
+
+
+					<!-- Recap -->
+					<section>
+						<section data-markdown>
+							## Outline
+
+							1. What is __nef__?
+							2. What's the next?
+							3. Swift Playgrounds 3.x
+							4. Swift Package
+							5. Closing the circle: __nef__ in your __iPad__
+						</section>
+
+						<section data-background="img/nef-background.png" data-transition="convex-in fade-out">
+							<img src="assets/share-github.png" alt="GitHub nef" width="12%">
+							<div data-markdown>
+								#### miguelangel-dev/nscoder-playground
+							</div>
+
+							<div data-markdown>
+								--------------------
+							</div>
+
+							<img src="assets/share-website.png" alt="GitHub nef" width="12%">
+							<div data-markdown>
+								#### nscoder.miguelangel.me
+							</div>
+						</section>
+					</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Recap -->
+<!-- Recap -->
+<!-- Recap -->
+
+
+
+
+
 
 				<section data-background="#fff">
 						<section data-markdown data-background="#fff">
@@ -413,14 +585,14 @@ import UIKit // This will be hidden in the Markdown file
 					<section data-background="img/nef-background.png" data-transition="convex-in fade-out">
 						<img src="assets/Octocat.png" alt="GitHub nef" width="40%">
 						<div data-markdown>
-							### miguelangel-dev/nef-slides-altconf2019
+							### miguelangel-dev/nspresenter-slides-playground
 						</div>
 					</section>
 				</section>
 
 
 			<footer>
-				@miguelangel_dl | #AltConfMadrid | @bow_swift
+				@miguelangel_dl | @nscoder_mad | @bow_swift
 			</footer>
 		</div>
 
