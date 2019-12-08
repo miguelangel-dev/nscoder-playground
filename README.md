@@ -4,7 +4,11 @@
 Playgrounds: to infinity... and beyond! ⤼ [`nef`](https://nscoder.miguelangel.me)
 
 ### Outline
-// TODO
+1. What is __nef__?
+2. What's the next?
+3. Swift Playgrounds 3.x
+4. Swift Package
+5. Closing the circle: __nef__ ♡ __iPad__
 
 ### How to compile slides?
 
