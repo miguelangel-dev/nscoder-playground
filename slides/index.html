@@ -205,7 +205,7 @@ Right(())
 
 						<section data-background="#fff">
 							<div data-markdown>
-									### Manifest.plist
+									#### Manifest.plist
 							</div>
 							<img src="assets/playground-book/manifest.png" alt="Playground Book structure" width="60%">
 						</section>
@@ -214,8 +214,153 @@ Right(())
 
 					<!-- Swift Package -->
 					<section data-background="#fff">
-							<section data-markdown data-background="#fff">
-								## Swift Package
+							<section data-markdown>
+								## Swift Package Manager
+							</section>
+
+							<section>
+								<div  data-markdown >
+									### SwiftPM
+								</div>
+								<h6>○ Swift is a cross-platform language and SwiftPM is a <b>cross-platform built system</b> for Swift packages</h6>
+								<h6>○ Xcode support of Swift packages is built on top of it</h6>
+								<h6>○ Swift packages can now be used natively in apps on all Apple's platforms</h6>
+							</section>
+
+							<section data-markdown >
+								### SwiftPM commands
+
+								| Command    |      Description      |
+								|:----------:|-----------------------|
+								| build      |  to build a package   |
+								| run			   |  to run the executable products |
+								| tests	     |  to run tests				  |
+								| package    |  to perform various nonbuild operations on the package |
+							</section>
+
+							<section data-markdown >
+								### swift package subcommands
+
+								| Subcommand |      Description      |
+								|:----------:|-----------------------|
+								| clean      |  delete build artifacts |
+								| describe	 |  describe the current package |
+								| reset      |  reset the complete cache/build directory |
+								| resolve    |  resolve package dependencies (transitively) |
+								| show-dependencies | print the resolved dependency graph |
+								| update     |  update package dependencies |
+								| ...        |  										 |
+							</section>
+
+							<section data-markdown>
+								 ### swift package resolve
+							</section>
+
+							<section data-markdown>
+									#### Package.swift
+									```swift
+									// swift-tools-version:5.1
+									import PackageDescription
+
+									let package = Package(
+									    name: "MyLibrary",
+									    dependencies: [
+									        .package(url: "https://github.com/bow-swift/bow",
+																	 from: "{version}")
+									    ]
+									)
+									```
+							</section>
+
+							<section>
+								<div data-markdown>
+									#### swift package resolve
+								</div>
+								<img src="assets/spm/spm-structure.png" alt="SPM package resolve - bow" width="25%">
+								<h6 style="text-align: center">repositories/checkouts-state.json</h6>
+								<div data-markdown>
+									```json
+									...
+									"https://github.com/bow-swift/bow.git": {
+										"repositoryURL": "https://github.com/bow-swift/bow.git",
+										"status": "available",
+										"subpath": "bow-674f37f5"
+									}
+									...
+									```
+								</div>
+							</section>
+
+							<section>
+								<img src="assets/spm/spm-bow-structure.png" alt="SPM package resolve - bow" width="16%">
+								<h6 style="text-align: center">repositories/bow-674f37f5/packed-refs</h6>
+								<div data-markdown>
+									```json
+									...
+									3dda4dbb9d2ee5b77a1aa9a6b8e1bc043b02c774 refs/tags/0.1.0
+									0a01cd1e3c686685654beb8bab044fcba59e1dc2 refs/tags/0.2.0
+									be51ef766d0f137a1d68351031c99db0579cfe0a refs/tags/0.3.0
+									ac3c035f44d6c4bad14a934a74105de6da190682 refs/tags/0.4.0
+									41e0d583c2d165371fa5dd8be11e2eb3b474056b refs/tags/0.5.0
+									fc4d6fc63cba4402e906f82aa223195afac3d4c2 refs/tags/0.6.0
+									...
+									```
+							</div>
+							</section>
+
+							<section>
+								<img src="assets/spm/spm-bow-dependencies.png" alt="SPM package resolve - bow" width="16%">
+									<h6 style="text-align: center">dependencies-state.json</h6>
+									<div data-markdown>
+									```json
+	 ...
+
+   "state": {
+      "checkoutState": {
+         "branch": null,
+         "revision": "fc4d6fc63cba4402e906f82aa223195afac3d4c2",
+         "version": "0.6.0"
+      },
+      "name": "checkout"
+   },
+   "subpath": "bow"
+
+	 ...
+									```
+								</div>
+							</section>
+
+							<section data-markdown>
+								 ### Swift package describe
+
+```json
+"c99name": "Bow",
+"module_type": "SwiftTarget",
+"name": "Bow",
+"path": ".../.build/checkouts/bow/Sources/Bow",
+"sources": [
+    ...
+	"Typeclasses/Applicative.swift",
+	"Typeclasses/ApplicativeError.swift",
+	"Typeclasses/Bimonad.swift",
+	"Typeclasses/Comonad.swift",
+	"Typeclasses/Traverse.swift",
+	...
+],
+"type": "library"
+```
+							</section>
+
+							<section data-markdown>
+								| Attribute        |      Type                   |
+								|:----------------:|:---------------------------:|
+								| name             | String                      |
+								| c99name          | String                      |
+								| type             | library - executable - test |
+								| module_type      | SwiftTarget - ClangTarget   |
+								| path             | String                      |
+								| sources          | [String]                    |
+
 							</section>
 					</section>
 
@@ -248,7 +393,7 @@ Right(())
 							1. What is __nef__?
 							2. What's the next?
 							3. Swift Playgrounds 3.x
-							4. Swift Package
+							4. Swift Package Manager
 							5. Closing the circle: __nef__ ♡ __iPad__
 						</section>
 
