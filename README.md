@@ -1,11 +1,11 @@
 ![](slides/assets/header-nef.png)
 
 ## NSPresenter 2019 ⚇ Madrid
-Playgrounds: to infinity... and beyond! ⤼ [`nef`](https://nscoder.miguelangel.me)
+Swift Playgrounds - To infinity... and beyond! ⤼ [`nef`](https://nscoder.miguelangel.me)
 
 ### Outline
 1. What is __nef__?
-2. What's the next?
+2. What's next?
 3. Swift Playgrounds 3.x
 4. Swift Package Manager
 5. Closing the circle: __nef__ ♡ __iPad__
