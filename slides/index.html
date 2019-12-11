@@ -371,6 +371,107 @@ Right(())
 								## Closing the circle
 								### __nef__ ♡ __iPad__
 							</section>
+
+							<section data-background="#fff">
+								<img src="assets/nef/nef-architecture.png" alt="nef architecture" width="65%">
+							</section>
+
+							<section data-background="#fff">
+								<img src="assets/nef/nef-architecture-project.png" alt="nef architecture - Xcode" width="25%">
+							</section>
+
+							<section data-background="#fff">
+								<div data-markdown >
+									#### NefSwiftPlayground
+								</div>
+								<img src="assets/nef/nef-logic-playground.png" alt="nef architecture - Xcode" width="85%">
+							</section>
+
+							<section data-background="#fff"> <!-- nef - use of spm checkout -->
+								<img src="assets/nef/nef-logic-resolve.png" alt="SPM package resolve - bow" width="100%">
+								<h6 style="text-align: center">swift package resolve</h6>
+								<img src="assets/spm/spm-structure.png" alt="SPM package resolve - bow" width="25%">
+							</section>
+
+							<section data-background="#fff"> <!-- nef - use of spm describe -->
+								<img src="assets/nef/nef-logic-describe.png" alt="SPM package resolve - bow" width="100%">
+								<h6 style="text-align: center">swift package describe</h6>
+								<div data-markdown>
+```json
+...
+"c99name": "Bow",
+"module_type": "SwiftTarget",
+"name": "Bow",
+"path": ".../.build/checkouts/bow/Sources/Bow",
+"sources": [
+ ...
+],
+"type": "library"
+...
+```
+							</div>
+							</section>
+
+							<section data-background="#fff">
+								<h6 style="text-align: center">EnvIO&lt;Shell, SwiftPlaygroundError, [Module]&gt;</h6>
+								<div data-markdown>
+								```swift
+								(Shell) -> IO&lt;SwiftPlaygroundError, [Module]&gt;
+								```
+								-----------------
+								```swift
+								IO&lt;SwiftPlaygroundError, [Module]&gt;
+								```
+								```swift
+								IO models a suspended computation that produces
+								side effects and returns a value of type [Module],
+								or produces an error of type SwiftPlaygroundError
+								```
+								</div>
+							</section>
+
+							<section data-markdown>
+									#### Given a Package.swift
+									```swift
+									// swift-tools-version:5.1
+									import PackageDescription
+
+									let package = Package(
+									    name: "BowTestProject",
+									    dependencies: [
+									        .package(url: "https://github.com/bow-swift/bow",
+											         from: "0.7.0")
+									    ]
+									)
+									```
+							</section>
+
+							<section data-background="#fff">
+								<div data-markdown>
+									#### nef Xcode Editor Extension
+								</div>
+								<img src="assets/nef/nef-extension-playgroundbook.png" alt="example of use nef Xcode extension" width="55%">
+								<img src="assets/nef/nef-extension-playgroundbook-running.png" alt="example of use nef Xcode extensio: running" width="55%">
+							</section>
+
+							<section data-background="#fff">
+								<div data-markdown>
+									#### __nef__ ♡ SwiftPM
+								</div>
+								<img src="assets/nef/nef-spm-structure.png" alt="SPM package resolve - bow" width="35%">
+							</section>
+
+							<section data-background="#fff">
+								<div data-markdown>
+									#### __nef__ ♡ Swift Playground 3.1
+								</div>
+								<img src="assets/nef/nef-playgroundbook-structure.png" alt="SPM package resolve - bow" width="35%">
+							</section>
+
+							<section data-markdown data-background="#fff">
+								## Xcode Editor Extension
+								### DEMO
+							</section>
 					</section>
 
 
