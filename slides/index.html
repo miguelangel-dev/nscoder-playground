@@ -333,6 +333,20 @@ Right(())
 							<section data-markdown>
 								 ### Swift package describe
 
+								| Attribute        |      Type                   |
+								|:----------------:|:---------------------------:|
+								| name             | String                      |
+								| c99name          | String                      |
+								| type             | library - executable - test |
+								| module_type      | SwiftTarget - ClangTarget   |
+								| path             | String                      |
+								| sources          | [String]                    |
+
+							</section>
+
+							<section data-markdown>
+								 #### .build/checkouts/bow
+
 ```json
 "c99name": "Bow",
 "module_type": "SwiftTarget",
@@ -349,18 +363,6 @@ Right(())
 ],
 "type": "library"
 ```
-							</section>
-
-							<section data-markdown>
-								| Attribute        |      Type                   |
-								|:----------------:|:---------------------------:|
-								| name             | String                      |
-								| c99name          | String                      |
-								| type             | library - executable - test |
-								| module_type      | SwiftTarget - ClangTarget   |
-								| path             | String                      |
-								| sources          | [String]                    |
-
 							</section>
 					</section>
 
@@ -475,12 +477,6 @@ Right(())
 					</section>
 
 
-
-
-
-
-
-
 					<!-- Recap -->
 					<section>
 						<section data-markdown>
@@ -515,8 +511,11 @@ Right(())
 						<section data-markdown>
 								## Q & A
 						</section>
-						<section data-markdown>
-								### Any limitations?
+						<section data-background="#fff">
+								<div data-markdown>
+									 ### When will it be available?
+								</div>
+								<img src="assets/qa/nef-available.png" alt="GitHub nef" width="80%">
 						</section>
 						<section>
 							<div data-markdown>
@@ -552,6 +551,9 @@ Right(())
 								    <td>iPad Air 2</td>
 								  </tr>
 							</table>
+						</section>
+						<section data-markdown>
+								### Any limitations?
 						</section>
 						<!-- Thanks -->
 						<section data-background="img/nef-background.png" data-transition="convex-in fade-out">
@@ -594,7 +596,7 @@ Right(())
 						<div data-markdown>
 							#### Sync mouse in iPadOS
 						</div>
-						<video width="1440" autoplay loop>
+						<video width="1440" controls loop>
 								<source src="assets/qa/ipad-mouse.mp4" type="video/mp4">
 						</video>
 					</section>
